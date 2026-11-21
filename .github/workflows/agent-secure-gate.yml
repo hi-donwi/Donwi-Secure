@@ -4,7 +4,7 @@
 #
 #   jobs:
 #     security:
-#       uses: hi-donwi/Agent-Secure/.github/workflows/agent-secure-gate.yml@<PINNED_ENGINE_SHA>
+#       uses: hi-donwi/Donwi-Secure/.github/workflows/agent-secure-gate.yml@<PINNED_ENGINE_SHA>
 #       with:
 #         root: .
 #         engine_version: v1.0.0
@@ -90,7 +90,7 @@ jobs:
           cd "${RUNNER_TEMP}/tools"
 
           curl -fsSL --retry 3 -o "${RUNNER_TEMP}/bin/agent-secure" \
-            "https://github.com/hi-donwi/Agent-Secure/releases/download/${ENGINE_VERSION}/agent-secure-linux-amd64"
+            "https://github.com/hi-donwi/Donwi-Secure/releases/download/${ENGINE_VERSION}/agent-secure-linux-amd64"
           echo "${ENGINE_SHA256}  ${RUNNER_TEMP}/bin/agent-secure" | sha256sum -c -
 
           curl -fsSL --retry 3 -o gitleaks.tar.gz \
