@@ -1,4 +1,4 @@
-# Agent-Secure
+# DONWI Secure
 
 A small deterministic CLI that turns an externally managed security policy and
 pinned scanner binaries into one JSON verdict: **pass**, **findings**, or
@@ -107,7 +107,7 @@ only for the job), and fails the job on any verdict other than `pass`:
 ```yaml
 jobs:
   security:
-    uses: hi-donwi/Agent-Secure/.github/workflows/agent-secure-gate.yml@<PINNED_ENGINE_SHA>
+    uses: hi-donwi/Donwi-Secure/.github/workflows/agent-secure-gate.yml@<PINNED_ENGINE_SHA>
     with:
       root: .
       engine_version: v0.1.5

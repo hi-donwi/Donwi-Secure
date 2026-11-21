@@ -1,3 +1,3 @@
-module github.com/hi-donwi/Agent-Secure
+module github.com/hi-donwi/Donwi-Secure
 
 go 1.26.6
